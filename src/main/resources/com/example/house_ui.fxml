@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigation?>
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane prefHeight="328.0" prefWidth="600.0">
+         <content>
+            <TableView prefHeight="323.0" prefWidth="598.0">
+              <columns>
+                <TableColumn prefWidth="64.0" text="House ID" />
+                  <TableColumn prefWidth="160.99996185302734" text="House name" />
+                  <TableColumn minWidth="0.0" prefWidth="75.0" text="House type" />
+                  <TableColumn minWidth="7.0" prefWidth="152.00003051757812" text="Rooms" />
+                  <TableColumn minWidth="8.0" prefWidth="142.50003051757812" text="Owner(s)" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <BottomNavigation layoutY="335.0" prefHeight="65.0" prefWidth="600.0">
+          <actionItems>
+            <BottomNavigationButton selected="true" text="Home">
+               <graphic>
+                  <Icon content="HOME" />
+               </graphic>
+            </BottomNavigationButton>
+              <BottomNavigationButton text="Add a house">
+                  <graphic>
+                      <Icon content="ADD" />
+                  </graphic>
+              </BottomNavigationButton>
+              <BottomNavigationButton text="Find a house">
+                  <graphic>
+                      <Icon content="FIND_IN_PAGE" />
+                  </graphic>
+              </BottomNavigationButton>
+            <BottomNavigationButton text="Edit a house">
+               <graphic>
+                  <Icon content="EDIT" />
+               </graphic>
+            </BottomNavigationButton>
+              <BottomNavigationButton text="Delete a house">
+                  <graphic>
+                      <Icon content="DELETE" />
+                  </graphic>
+              </BottomNavigationButton>
+          </actionItems>
+      </BottomNavigation>
+   </children>
+</AnchorPane>
