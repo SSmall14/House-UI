@@ -9,16 +9,16 @@ import java.io.IOException;
 
 public class MainApplication extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+  public static void main(String[] args) {
+    launch(args);
+  }
 
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("house_ui.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Housing Register");
-        stage.setScene(scene);
-        stage.show();
-    }
+  @Override
+  public void start(Stage stage) throws IOException {
+    FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("house_ui.fxml"));
+    Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+    stage.setTitle("Housing Register");
+    stage.setScene(scene);
+    stage.show();
+  }
 }

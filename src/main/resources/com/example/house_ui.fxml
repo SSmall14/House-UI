@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:controller="com.example.HelloController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="com.example.HomeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ScrollPane prefHeight="328.0" prefWidth="600.0">
          <content>
@@ -13,8 +13,8 @@
                 <TableColumn fx:id="house_id" prefWidth="64.0" text="House ID" />
                   <TableColumn fx:id="house_name" prefWidth="160.99996185302734" text="House name" />
                   <TableColumn fx:id="house_category" minWidth="0.0" prefWidth="75.0" text="House type" />
-                  <TableColumn minWidth="7.0" prefWidth="152.00003051757812" text="Rooms" />
-                  <TableColumn minWidth="8.0" prefWidth="142.50003051757812" text="Owner(s)" />
+                  <TableColumn fx:id="rooms" minWidth="7.0" prefWidth="152.00003051757812" text="Rooms" />
+                  <TableColumn fx:id="owners" minWidth="8.0" prefWidth="142.50003051757812" text="Owner(s)" />
               </columns>
             </TableView>
          </content>
